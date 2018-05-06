@@ -1,0 +1,37 @@
+*TDP Chargebacks Project(CII Initiative)*
+
+import os
+
+os.getcwd() -> current working directory
+
+os.chdir(path) -> changes the directory
+
+print(dir(os)) -> all the functions and libraries in os module
+
+os.listdir(path) -> lists all the directories in the current working directory
+
+os.mkdir(name) -> creates a directory with name 'name'
+
+os.makedirs('name/name1/name2/......')
+-> makedirs is used when you would like to create deep level directories.
+-> Intermediate level directories are made within the mother directory
+
+os.rmdir(name) -> removes a mother directory
+
+os.removedirs(name) -> removes directories within the mother directory as well (Intermediate directories)
+
+os.rename('test.txt','demo.txt') -> rename files
+[original file name first and new file name second]
+
+print(os.stat('demo.txt')) -> gives us all the stats of a file like size and last modified time/last edit time.
+
+os.walk() -> method to yield the directory tree
+
+for dirpath, dirnames, filenames in os.walk(os.getcwd()):
+   print('Current Path:',dirpath)
+   print('Directories:',dirnames)
+   print('Filenames:',filenames)
+
+os.environ.get('HOME') -> get the home directory of user.
+
+os.path module contains many useful functions for dealing with path variables.
